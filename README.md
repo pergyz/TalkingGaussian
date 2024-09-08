@@ -12,9 +12,12 @@ This is the official repository for our ECCV 2024 paper **TalkingGaussian: Struc
 Tested on Ubuntu 18.04, CUDA 11.3, PyTorch 1.12.1
 
 ```
-git clone git@github.com:Fictionarry/TalkingGaussian.git --recursive
+wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
+sh Anaconda3-2024.06-1-Linux-x86_64.sh
+git clone https://github.com/pergyz/TalkingGaussian.git --recursive
+cd TalkingGaussian/
 
-conda env create --file environment.yml
+/home/user/anaconda3/bin/conda env create --file environment.yml
 conda activate talking_gaussian
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 pip install tensorflow-gpu==2.8.0
