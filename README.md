@@ -15,6 +15,8 @@ Tested on Ubuntu 18.04, CUDA 11.3, PyTorch 1.12.1
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb -O ~/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i ~/cuda-keyring_1.1-1_all.deb
 sudo apt update && sudo apt install -y cuda-toolkit
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 sh Anaconda3-2024.06-1-Linux-x86_64.sh
