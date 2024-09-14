@@ -25,7 +25,7 @@ dependencies:
     - numpy
     - pillow
     - scipy
-    - tensorboard
+    - tensorboard==2.14.1
     - opencv-python
     - tensorboardX
 
