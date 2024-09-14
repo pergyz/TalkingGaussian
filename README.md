@@ -22,6 +22,8 @@ wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 sh Anaconda3-2024.06-1-Linux-x86_64.sh
 git clone https://github.com/pergyz/TalkingGaussian.git --recursive
 cd TalkingGaussian/
+git submodule init
+git submodule update --remote
 
 /home/user/anaconda3/bin/conda env create --file environment.yml
 conda activate talking_gaussian
