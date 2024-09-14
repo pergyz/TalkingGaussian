@@ -2,6 +2,7 @@ name: talking_gaussian
 channels:
   - pytorch
   - pytorch3d
+  - nvidia
   - conda-forge
   - defaults
 dependencies:
@@ -10,6 +11,7 @@ dependencies:
   - python=3.10.15
   - pip
   - pytorch3d
+  - pytorch-cuda=12.1
   - pytorch=1.12.1
   - torchaudio=0.12.1
   - torchvision=0.13.1
