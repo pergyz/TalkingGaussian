@@ -39,8 +39,10 @@ dependencies:
 
     - face_alignment
     - python_speech_features
+    - ninja
     - numba
     - resampy
+    - psutil
     - pyaudio
     - soundfile
     - configargparse
